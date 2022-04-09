@@ -89,7 +89,14 @@ class ATM:
         for idx, val in enumerate(base.account_data[card].keys()):
             print(f'[{idx}]\t{val}'.expandtabs())
             accounts[idx] = val
-        n = int(input('Select number : '))
+        
+        while True:
+            n = int(input('Select number : '))
+            if n in accounts.keys():
+                break
+            else:
+                continue
+            
         return accounts[n]
         
     def print_balance(card, user_account, base) -> None:
