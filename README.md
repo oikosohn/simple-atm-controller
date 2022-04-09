@@ -1,7 +1,5 @@
 # Simple-ATM-Controller
 
-This code was written in python 3.7.10.
-
 ## Implementation
 1. Insert Card
 2. Enter and Verify PIN 
@@ -13,8 +11,14 @@ This code was written in python 3.7.10.
 ## ER Diagram
 ![ER_diagram.png](./ER_diagram.png)
 
-## Installation and Excecution
-Clone this repository and execute `main.py`.
+## Dependency Setup
+```python
+conda create -n atm python=3.7.10 -y
+conda activate atm
+```
+
+## Clone and Run
+Clone this repository and run `main.py`.
 
 ```python
 git clone https://github.com/oikosohn/simple-atm-controller
