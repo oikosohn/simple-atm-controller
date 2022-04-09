@@ -40,11 +40,15 @@ class Bank:
             return self.account_data[card][user_account]
 
     def withdraw(self, card, user_account, money) -> int:
+        if money <= 0:
+            print('Please withdraw more than 1 dollor')
+            return self.account_data[card][user_account] 
+
         if self.account_data[card][user_account] >= money:
             self.account_data[card][user_account] -= money
             return self.account_data[card][user_account]
         else:
-            print('You cannot withdraw more than your balance.')
+            print('You cannot withdraw more than your balance of account.')
             return self.account_data[card][user_account]
 
 
