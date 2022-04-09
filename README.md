@@ -14,7 +14,7 @@ This code was written in python 3.7.10.
 ![ER_diagram.png](./ER_diagram.png)
 
 ## Installation and Excecution
-clone this repository and execute `main.py`.
+Clone this repository and execute `main.py`.
 
 ```python
 git clone https://github.com/oikosohn/simple-atm-controller
@@ -23,4 +23,6 @@ python main.py
 ```
 
 ## Demonstration
+- [demo.gif](./demo.gif)
+
 ![demo.gif](./demo.gif)
