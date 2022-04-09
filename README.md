@@ -26,6 +26,17 @@ cd simple-atm-controller
 python main.py
 ```
 
+## Test Input
+```python
+base = Bank()
+base.add_account('bisa', 'A_bank_account', 1000)
+base.add_account('bisa', 'B_bank_account', 2000)
+base.add_card('bisa', 1234)
+```
+- card name is `bisa` and PIN is `1234`
+- The accounts linked to `bisa` are `A_bank_account` and `B_bank_account`.
+
+
 ## Demonstration
 - [demo.gif](./demo.gif)
 
